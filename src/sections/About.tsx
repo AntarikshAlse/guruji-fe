@@ -72,9 +72,10 @@ const About = () => {
   };
   return (
     <Box
-      bg={"#FFEFE3"}
+      bg={"#dcb685"}
       color={useColorModeValue("gray.700", "gray.200")}
       mx={"auto"}
+      w={"80%"}
       py={4}
     >
       <Container as={Stack} maxW={"6xl"} py={10}>

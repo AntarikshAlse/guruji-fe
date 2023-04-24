@@ -16,40 +16,39 @@ const Astrologers = () => {
         Premium Astrologers
       </Heading>
       <Grid
-        bg={"goldenrod"}
         w="100%"
         templateRows="repeat(3, 1fr)"
         templateColumns="repeat(3, 1fr)"
-        gap={4}
+        gap={2}
       >
         {/* 1 */}
-        <GridItem rowSpan={1} colSpan={1} bg="tomato">
+        <GridItem rowSpan={1} colSpan={1}>
           <AstroCard />
         </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg="tomato">
+        <GridItem rowSpan={1} colSpan={1}>
           <AstroCard />
         </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg="tomato">
+        <GridItem rowSpan={1} colSpan={1}>
           <AstroCard />
         </GridItem>
         {/* 2 */}
-        <GridItem rowSpan={1} colSpan={1} bg="tomato">
+        <GridItem rowSpan={1} colSpan={1}>
           <AstroCard />
         </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg="tomato">
+        <GridItem rowSpan={1} colSpan={1}>
           <AstroCard />
         </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg="tomato">
+        <GridItem rowSpan={1} colSpan={1}>
           <AstroCard />
         </GridItem>
         {/* 3 */}
-        <GridItem rowSpan={1} colSpan={1} bg="tomato">
+        <GridItem rowSpan={1} colSpan={1}>
           <AstroCard />
         </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg="tomato">
+        <GridItem rowSpan={1} colSpan={1}>
           <AstroCard />
         </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg="tomato">
+        <GridItem rowSpan={1} colSpan={1}>
           <AstroCard />
         </GridItem>
       </Grid>
