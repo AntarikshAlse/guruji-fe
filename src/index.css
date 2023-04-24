@@ -56,5 +56,8 @@ span,
 .slick-center {
   -webkit-transform: scale(1.25);
   transform: scale(1.25);
-  background-color: rgba(196, 200, 203, 0.493);
+}
+
+.slick-slide {
+  padding: 0 2rem;
 }

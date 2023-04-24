@@ -7,12 +7,14 @@ import {
   Icon,
   Box,
   Center,
+  AspectRatio,
   Text,
 } from "@chakra-ui/react";
 import { BiChevronRightCircle, BiChevronLeftCircle } from "react-icons/bi";
-import Card from "../components/VideoCard";
 import Slider from "react-slick";
-
+import vid1 from "../assets/vid1.mp4";
+import vid2 from "../assets/vid2.mp4";
+import vid3 from "../assets/vid3.mp4";
 const Testimonials = () => {
   const [slider, setSlider] = React.useState<Slider | null>(null);
   const container: React.CSSProperties = {
@@ -40,11 +42,30 @@ const Testimonials = () => {
       </Heading>
       <Box w="90%">
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <AspectRatio maxW="400px" ratio={9 / 16}>
+            <iframe
+              src={vid3}
+              style={{ width: "100%", height: "100%", borderRadius: "8px" }}
+            />
+          </AspectRatio>
+          <AspectRatio maxW="400px" ratio={9 / 16}>
+            <iframe
+              src={vid2}
+              style={{ width: "100%", height: "100%", borderRadius: "8px" }}
+            />
+          </AspectRatio>
+          <AspectRatio maxW="400px" ratio={9 / 16}>
+            <iframe
+              src={vid3}
+              style={{ width: "100%", height: "100%", borderRadius: "8px" }}
+            />
+          </AspectRatio>
+          <AspectRatio maxW="400px" ratio={9 / 16}>
+            <iframe
+              src={vid1}
+              style={{ width: "100%", height: "100%", borderRadius: "8px" }}
+            />
+          </AspectRatio>
         </Slider>
       </Box>
       <Flex gap={8} mt={2}>
