@@ -36,15 +36,19 @@ const AstroCard = () => {
         </Flex>
         <Flex flexDirection={"column"} bg="blackAlpha.400">
           <Box>
-            <Text color="antiquewhite">Astrologer Kevin</Text>
-            <Text color="antiquewhite">Specialities</Text>
+            <Text fontWeight="bold" color="antiquewhite">
+              Astrologer Kevin
+            </Text>
+            <Text color="whitesmoke">Specialities</Text>
             <span>Love, Business, Life</span>
             <Flex>
               <Box>
-                <Text color="antiquewhite">Skills</Text>
+                <Text color="whitesmoke">Skills</Text>
                 <span>Vedic Astrology, Kundali</span>
               </Box>
-              <Text color={"whatsapp.400"}>Price 10 Rs/min</Text>
+              <Text fontWeight="bold" color={"#5CE449"}>
+                Price 10 Rs/min
+              </Text>
             </Flex>
           </Box>
           <Flex justifyContent={"space-between"} rounded={"lg"}>

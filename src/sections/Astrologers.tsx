@@ -4,7 +4,7 @@ import AstroCard from "./../components/AstroCard";
 const Astrologers = () => {
   const container: React.CSSProperties = {
     display: "flex",
-    background: "#FFEFE3",
+    background: "#dcb685",
     flexDirection: "column",
     alignItems: "center",
     width: "80%",
@@ -16,7 +16,7 @@ const Astrologers = () => {
         Premium Astrologers
       </Heading>
       <Grid
-        w="100%"
+        w="80%"
         templateRows="repeat(3, 1fr)"
         templateColumns="repeat(3, 1fr)"
         gap={2}

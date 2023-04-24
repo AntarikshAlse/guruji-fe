@@ -29,7 +29,7 @@ import { MdOutlineHealthAndSafety } from "react-icons/md";
 const Solutions = () => {
   const container: React.CSSProperties = {
     display: "flex",
-    background: "#FFEFE3",
+    background: "#dcb685",
     flexDirection: "column",
     alignItems: "center",
     width: "80%",
@@ -66,7 +66,7 @@ const Solutions = () => {
               <Text w={"70%"} px={2} minH={"3rem"}>
                 {feature.title}
               </Text>
-              <Center bg="brown" w={"30%"} h={"100%"}>
+              <Center bg="#a95210" w={"30%"} h={"100%"}>
                 <Icon as={feature.icon} color={"white"} />
               </Center>
             </Flex>
@@ -95,7 +95,7 @@ const Solutions = () => {
               <Text w={"70%"} px={2} minH={"3rem"}>
                 {feature.title}
               </Text>
-              <Center bg="brown" w={"30%"} h={"100%"}>
+              <Center bg="#a95210" w={"30%"} h={"100%"}>
                 <Icon as={feature.icon} color={"white"} />
               </Center>
             </Flex>

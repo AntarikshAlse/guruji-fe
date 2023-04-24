@@ -13,10 +13,13 @@ import {
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import Slider from "react-slick";
+import alex from "../assets/alexander.jpg";
+import vickey from "../assets/vicky.jpg";
+import nicholas from "../assets/nicolas.jpg";
 const Review = () => {
   const container: React.CSSProperties = {
     display: "flex",
-    background: "#FFEFE3",
+    background: "#dcb685",
     flexDirection: "column",
     alignItems: "center",
     width: "80%",
@@ -47,8 +50,8 @@ const Review = () => {
     nihil pariatur laboriosam. Earum, odio expedita, alias blanditiis
     iusto, itaque soluta totam eveniet dolores accusantium nobis
     asperiores cupiditate quas facere veniam!`,
-      name: "James Harold",
-      img: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+      name: "Alexander",
+      img: alex,
     },
     {
       stars: 3,
@@ -56,8 +59,8 @@ const Review = () => {
     nihil pariatur laboriosam. Earum, odio expedita, alias blanditiis
     iusto, itaque soluta totam eveniet dolores accusantium nobis
     asperiores cupiditate quas facere veniam!`,
-      name: "Ramesh Shah",
-      img: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+      name: "Vickey",
+      img: vickey,
     },
     {
       stars: 5,
@@ -65,8 +68,8 @@ const Review = () => {
     nihil pariatur laboriosam. Earum, odio expedita, alias blanditiis
     iusto, itaque soluta totam eveniet dolores accusantium nobis
     asperiores cupiditate quas facere veniam!`,
-      name: "Kartik Singh",
-      img: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+      name: "Nicholas",
+      img: nicholas,
     },
   ];
   return (

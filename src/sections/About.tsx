@@ -64,7 +64,7 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 const About = () => {
   const container: React.CSSProperties = {
     display: "flex",
-    background: "#FFEFE3",
+    background: "#dcb685",
     flexDirection: "column",
     alignItems: "center",
     width: "80%",
