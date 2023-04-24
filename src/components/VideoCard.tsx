@@ -3,6 +3,7 @@ import {
   Avatar,
   Box,
   Center,
+  AspectRatio,
   Image,
   Flex,
   Text,
@@ -12,16 +13,16 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FiPlayCircle } from "react-icons/fi";
-
+import nicolas from "../assets/nicolas.jpg";
 export default function Card() {
   return (
     <Center>
       <Box
         maxW={"270px"}
         w={"full"}
-        bg={useColorModeValue("white", "gray.800")}
+        //bg={useColorModeValue("white", "gray.800")}
+        backgroundImage={`url(${nicolas})`}
         rounded={"md"}
-        overflow={"hidden"}
         px={{ lg: "7rem", sm: "6rem" }}
         py={{ lg: "9rem", sm: "4rem" }}
       >

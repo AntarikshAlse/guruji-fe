@@ -52,3 +52,9 @@ span,
 .paragraph {
   font-family: "Poppins", sans-serif;
 }
+
+.slick-center {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  background-color: rgba(196, 200, 203, 0.493);
+}
