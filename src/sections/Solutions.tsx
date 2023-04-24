@@ -29,7 +29,7 @@ import { MdOutlineHealthAndSafety } from "react-icons/md";
 const Solutions = () => {
   const container: React.CSSProperties = {
     display: "flex",
-    background: "#dcb685",
+    background: "yellowgreen",
     flexDirection: "column",
     alignItems: "center",
     width: "80%",
@@ -83,7 +83,8 @@ const Solutions = () => {
             left={0}
             minW={"500px"}
             alt="Raas Chakra"
-            style={rotationAnimation}
+            animation="rotate 3s infinite linear"
+            //style={rotationAnimation}
           />
           <Image src={sunLogo} position={"relative"} bottom="50%" left="36%" />
         </div>

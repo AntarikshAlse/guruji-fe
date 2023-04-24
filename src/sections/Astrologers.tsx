@@ -4,7 +4,7 @@ import AstroCard from "./../components/AstroCard";
 const Astrologers = () => {
   const container: React.CSSProperties = {
     display: "flex",
-    background: "#dcb685",
+    background: "yellowgreen",
     flexDirection: "column",
     alignItems: "center",
     width: "80%",

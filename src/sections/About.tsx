@@ -64,7 +64,7 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 const About = () => {
   const container: React.CSSProperties = {
     display: "flex",
-    background: "#dcb685",
+    background: "yellowgreen",
     flexDirection: "column",
     alignItems: "center",
     width: "80%",
@@ -72,7 +72,7 @@ const About = () => {
   };
   return (
     <Box
-      bg={"#dcb685"}
+      bg={"yellowgreen"}
       color={useColorModeValue("gray.700", "gray.200")}
       mx={"auto"}
       w={"80%"}

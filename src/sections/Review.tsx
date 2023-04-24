@@ -19,7 +19,7 @@ import nicholas from "../assets/nicolas.jpg";
 const Review = () => {
   const container: React.CSSProperties = {
     display: "flex",
-    background: "#dcb685",
+    background: "yellowgreen",
     flexDirection: "column",
     alignItems: "center",
     width: "80%",
