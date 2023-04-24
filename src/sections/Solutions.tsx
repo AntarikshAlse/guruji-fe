@@ -36,7 +36,10 @@ const Solutions = () => {
     margin: "0 auto",
     padding: "4rem 0",
   };
-
+  const rotationAnimation = {
+    transformOrigin: "center",
+    animation: "rotate 3s infinite linear",
+  };
   const arrayFeaturesLeft = [
     { title: "Love Problem", icon: AiOutlineHeart },
     { title: "Health Problems", icon: MdOutlineHealthAndSafety },
@@ -80,7 +83,7 @@ const Solutions = () => {
             left={0}
             minW={"500px"}
             alt="Raas Chakra"
-            transition="0.5s linear"
+            style={rotationAnimation}
           />
           <Image src={sunLogo} position={"relative"} bottom="50%" left="36%" />
         </div>

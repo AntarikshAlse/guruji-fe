@@ -16,50 +16,56 @@ const AstroCard = () => {
         w={"15rem"}
         rounded={"lg"}
         my="4"
-        bg="white"
         justifyContent={"space-between"}
         backgroundImage={ManImg}
         backgroundSize={"cover"}
+        backgroundBlendMode={"darken"}
       >
-        <Flex justifyContent={"space-between"} p={2} pb={"8rem"}>
-          <Text color={"white"}>10+ Years</Text>
-          <Flex bg={"blackAlpha.800"} rounded={"md"} py={0.5} gap={2} px={1}>
-            <Box
-              rounded={"full"}
-              bg="whatsapp.400"
-              h={2}
-              w={2}
-              alignSelf={"center"}
-            />
-            <Text color={"white"}>Online</Text>
-          </Flex>
-        </Flex>
-        <Flex flexDirection={"column"} bg="blackAlpha.400">
-          <Box>
-            <Text fontWeight="bold" color="antiquewhite">
-              Astrologer Kevin
-            </Text>
-            <Text color="whitesmoke">Specialities</Text>
-            <span>Love, Business, Life</span>
-            <Flex>
-              <Box>
-                <Text color="whitesmoke">Skills</Text>
-                <span>Vedic Astrology, Kundali</span>
-              </Box>
-              <Text fontWeight="bold" color={"#5CE449"}>
-                Price 10 Rs/min
-              </Text>
+        <Box bg="blackAlpha.400">
+          <Flex justifyContent={"space-between"} p={2} pb={"8rem"}>
+            <Text color={"white"}>10+ Years</Text>
+            <Flex bg={"blackAlpha.800"} rounded={"md"} py={0.5} gap={2} px={1}>
+              <Box
+                rounded={"full"}
+                bg="whatsapp.400"
+                h={2}
+                w={2}
+                alignSelf={"center"}
+              />
+              <Text color={"white"}>Online</Text>
             </Flex>
-          </Box>
-          <Flex justifyContent={"space-between"} rounded={"lg"}>
-            <Button color="white" bg={"blackAlpha.900"} w={"49%"}>
-              Chat
-            </Button>
-            <Button color="white" bg={"blackAlpha.900"} w={"49%"}>
-              Call
-            </Button>
           </Flex>
-        </Flex>
+          <Flex flexDirection={"column"}>
+            <Box pl="3">
+              <Text fontWeight="bold" color="antiquewhite">
+                Astrologer Kevin
+              </Text>
+              <Text color="bisque">Specialities</Text>
+              <Text fontSize="sm" color="white">
+                Love, Business, Life
+              </Text>
+              <Flex>
+                <Box>
+                  <Text color="bisque">Skills</Text>
+                  <Text fontSize="sm" color="white">
+                    Vedic Astrology, Kundali
+                  </Text>
+                </Box>
+                <Text fontWeight="bold" color={"#5CE449"}>
+                  Price 10 Rs/min
+                </Text>
+              </Flex>
+            </Box>
+            <Flex justifyContent={"space-between"} rounded={"lg"}>
+              <Button color="white" bg={"blackAlpha.900"} w={"49%"}>
+                Chat
+              </Button>
+              <Button color="white" bg={"blackAlpha.900"} w={"49%"}>
+                Call
+              </Button>
+            </Flex>
+          </Flex>
+        </Box>
       </Flex>
     </>
   );
