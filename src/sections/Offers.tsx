@@ -10,8 +10,8 @@ import offer3 from "../assets/offer3.jpg";
 // Settings for the slider
 const settings = {
   dots: true,
-  arrows: false,
   fade: true,
+  arrows: false,
   infinite: true,
   autoplay: true,
   speed: 1000,

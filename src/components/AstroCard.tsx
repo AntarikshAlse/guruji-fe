@@ -7,8 +7,14 @@ import {
   Button,
   Heading,
 } from "@chakra-ui/react";
-import ManImg from "../assets/AstrologerSample.jpg";
-const AstroCard = () => {
+
+type Props = {
+  src: string;
+  name: string;
+  specialities: string;
+  skills: string;
+};
+const AstroCard = ({ src, name, specialities, skills }: Props) => {
   return (
     <>
       <Flex
@@ -17,7 +23,7 @@ const AstroCard = () => {
         rounded={"lg"}
         my="4"
         justifyContent={"space-between"}
-        backgroundImage={ManImg}
+        backgroundImage={src}
         backgroundSize={"cover"}
         backgroundBlendMode={"darken"}
       >
@@ -38,17 +44,17 @@ const AstroCard = () => {
           <Flex flexDirection={"column"}>
             <Box pl="3">
               <Text fontWeight="bold" color="antiquewhite">
-                Astrologer Kevin
+                Astrologer {name}
               </Text>
               <Text color="bisque">Specialities</Text>
               <Text fontSize="sm" color="white">
-                Love, Business, Life
+                {specialities}
               </Text>
               <Flex>
                 <Box>
                   <Text color="bisque">Skills</Text>
                   <Text fontSize="sm" color="white">
-                    Vedic Astrology, Kundali
+                    {skills}
                   </Text>
                 </Box>
                 <Text fontWeight="bold" color={"#5CE449"}>

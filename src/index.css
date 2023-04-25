@@ -57,7 +57,10 @@ span,
   -webkit-transform: scale(1.25);
   transform: scale(1.25);
 }
-
+/* select class with not sclick-center */
+.slick-track > :not(.slick-center) {
+  opacity: 0.7;
+}
 .slick-slide {
   padding: 0 2rem;
 }

@@ -15,6 +15,8 @@ import Slider from "react-slick";
 import vid1 from "../assets/vid1.mp4";
 import vid2 from "../assets/vid2.mp4";
 import vid3 from "../assets/vid3.mp4";
+import VideoCard from "../components/VideoCard";
+
 const Testimonials = () => {
   const [slider, setSlider] = React.useState<Slider | null>(null);
   const container: React.CSSProperties = {
@@ -34,6 +36,7 @@ const Testimonials = () => {
     slidesToShow: 3,
     speed: 500,
   };
+  const srcArray = [vid1, vid2, vid3, vid1, vid2];
   return (
     <div style={container}>
       <Image src={SunLogo} alt="sun image" />
@@ -42,30 +45,9 @@ const Testimonials = () => {
       </Heading>
       <Box w="90%">
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
-          <AspectRatio maxW="400px" ratio={9 / 16}>
-            <iframe
-              src={vid3}
-              style={{ width: "100%", height: "100%", borderRadius: "8px" }}
-            />
-          </AspectRatio>
-          <AspectRatio maxW="400px" ratio={9 / 16}>
-            <iframe
-              src={vid2}
-              style={{ width: "100%", height: "100%", borderRadius: "8px" }}
-            />
-          </AspectRatio>
-          <AspectRatio maxW="400px" ratio={9 / 16}>
-            <iframe
-              src={vid3}
-              style={{ width: "100%", height: "100%", borderRadius: "8px" }}
-            />
-          </AspectRatio>
-          <AspectRatio maxW="400px" ratio={9 / 16}>
-            <iframe
-              src={vid1}
-              style={{ width: "100%", height: "100%", borderRadius: "8px" }}
-            />
-          </AspectRatio>
+          {srcArray.map((src, i) => (
+            <VideoCard key={i} src={src} />
+          ))}
         </Slider>
       </Box>
       <Flex gap={8} mt={2}>
@@ -73,14 +55,16 @@ const Testimonials = () => {
           as={BiChevronLeftCircle}
           h={10}
           w={10}
-          color="#a95210"
+          _hover={{ cursor: "pointer" }}
+          color="blackAlpha.700"
           onClick={() => slider?.slickPrev()}
         />
         <Icon
           as={BiChevronRightCircle}
           h={10}
           w={10}
-          color="#a95210"
+          _hover={{ cursor: "pointer" }}
+          color="blackAlpha.700"
           onClick={() => slider?.slickNext()}
         />
       </Flex>
