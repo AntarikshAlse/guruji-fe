@@ -61,3 +61,19 @@ span,
 .slick-slide {
   padding: 0 2rem;
 }
+
+.rotationAnimation {
+  transform-origin: center;
+  animation: rotation 10s linear infinite;
+}
+.pauseAnimation {
+  animation-play-state: paused;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

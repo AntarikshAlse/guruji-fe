@@ -36,10 +36,6 @@ const Solutions = () => {
     margin: "0 auto",
     padding: "4rem 0",
   };
-  const rotationAnimation = {
-    transformOrigin: "center",
-    animation: "rotate 3s infinite linear",
-  };
   const arrayFeaturesLeft = [
     { title: "Love Problem", icon: AiOutlineHeart },
     { title: "Health Problems", icon: MdOutlineHealthAndSafety },
@@ -57,7 +53,7 @@ const Solutions = () => {
       <Heading fontFamily={"Sansation Bold"} textAlign={{ sm: "center" }}>
         Many Problems one Solution
       </Heading>
-      <Flex w={"80%"} mx="auto" justifyContent={"space-between"}>
+      {/*       <Flex w={"80%"} mx="auto" justifyContent={"space-between"}>
         <Flex flexDirection={"column"} gap={10} my="3rem">
           {arrayFeaturesLeft.map((feature) => (
             <Flex
@@ -83,8 +79,7 @@ const Solutions = () => {
             left={0}
             minW={"500px"}
             alt="Raas Chakra"
-            animation="rotate 3s infinite linear"
-            //style={rotationAnimation}
+            className="rotationAnimation"
           />
           <Image src={sunLogo} position={"relative"} bottom="50%" left="36%" />
         </div>
@@ -105,6 +100,74 @@ const Solutions = () => {
             </Flex>
           ))}
         </Flex>
+      </Flex> */}
+      <Flex
+        w={{ base: "100%", md: "80%" }}
+        mx="auto"
+        justifyContent="space-between"
+        flexDirection={{ base: "column", md: "row" }}
+      >
+        <Box
+          flex="1"
+          my={{ base: "1rem", md: "3rem" }}
+          order={{ base: 2, md: 0 }}
+        >
+          {arrayFeaturesLeft.map((feature) => (
+            <Flex
+              rounded="lg"
+              key={feature.title}
+              bg="aliceblue"
+              border="1px solid brown"
+              my={{ base: "1rem", md: "3rem" }}
+              mx={{ base: "auto", md: "0" }}
+              w={{ base: "100%", md: "auto" }}
+            >
+              <Text w={{ base: "100%", md: "70%" }} px={2} minH="3rem">
+                {feature.title}
+              </Text>
+              <Center bg="#a95210" w={{ base: "100%", md: "30%" }}>
+                <Icon as={feature.icon} color="white" />
+              </Center>
+            </Flex>
+          ))}
+        </Box>
+        <Box flex="1" my={{ base: "1rem", md: "3rem" }} position={"relative"}>
+          <Image
+            src={Chakra}
+            position="relative"
+            top={0}
+            left={0}
+            minW={{ base: "100%", md: "500px" }}
+            alt="Raas Chakra"
+            className="rotationAnimation"
+          />
+          <Image
+            src={sunLogo}
+            position="absolute"
+            bottom={{ md: "39%", base: "32%" }}
+            left={{ md: "36%", base: "29%" }}
+          />
+        </Box>
+        <Box flex="1" my={{ base: "1rem", md: "3rem" }}>
+          {arrayFeaturesRight.map((feature) => (
+            <Flex
+              rounded="lg"
+              key={feature.title}
+              bg="aliceblue"
+              border="1px solid brown"
+              my={{ base: "1rem", md: "3rem" }}
+              mx={{ base: "auto", md: "0" }}
+              w={{ base: "100%", md: "auto" }}
+            >
+              <Text w={{ base: "100%", md: "70%" }} px={2} minH="3rem">
+                {feature.title}
+              </Text>
+              <Center bg="#a95210" w={{ base: "100%", md: "30%" }}>
+                <Icon as={feature.icon} color="white" />
+              </Center>
+            </Flex>
+          ))}
+        </Box>
       </Flex>
     </div>
   );
