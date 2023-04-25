@@ -21,7 +21,7 @@ const Testimonials = () => {
   const [slider, setSlider] = React.useState<Slider | null>(null);
   const container: React.CSSProperties = {
     display: "flex",
-    background: "yellowgreen",
+    background: "cornsilk",
     flexDirection: "column",
     alignItems: "center",
     width: "80%",

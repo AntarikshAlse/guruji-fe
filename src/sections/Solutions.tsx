@@ -29,7 +29,7 @@ import { MdOutlineHealthAndSafety } from "react-icons/md";
 const Solutions = () => {
   const container: React.CSSProperties = {
     display: "flex",
-    background: "yellowgreen",
+    background: "cornsilk",
     flexDirection: "column",
     alignItems: "center",
     width: "80%",

@@ -21,7 +21,7 @@ const AstroCard = ({ src, name, specialities, skills }: Props) => {
         flexDirection={"column"}
         w={"15rem"}
         rounded={"lg"}
-        my="4"
+        my={{ md: "4", sm: "2" }}
         justifyContent={"space-between"}
         backgroundImage={src}
         backgroundSize={"cover"}

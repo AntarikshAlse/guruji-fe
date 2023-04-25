@@ -1,4 +1,4 @@
-import { Box, Heading, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Heading, Grid, GridItem, Flex } from "@chakra-ui/react";
 import React from "react";
 import AstroCard from "./../components/AstroCard";
 //images
@@ -9,7 +9,7 @@ import vicky from "../assets/vicky.jpg";
 const Astrologers = () => {
   const container: React.CSSProperties = {
     display: "flex",
-    background: "yellowgreen",
+    background: "cornsilk",
     flexDirection: "column",
     alignItems: "center",
     width: "80%",
@@ -80,12 +80,14 @@ const Astrologers = () => {
         w="80%"
         templateRows="repeat(3, 1fr)"
         templateColumns="repeat(3, 1fr)"
+        display={{ sm: "none", md: "grid" }}
         gap={2}
       >
         {/* 1 */}
-        {astrologers.map((astrologer) => (
+        {astrologers.map((astrologer, i) => (
           <GridItem rowSpan={1} colSpan={1}>
             <AstroCard
+              key={i}
               name={astrologer.name}
               src={astrologer.src}
               specialities={astrologer.specialities}
@@ -94,6 +96,23 @@ const Astrologers = () => {
           </GridItem>
         ))}
       </Grid>
+
+      <Flex
+        w="80%"
+        display={{ sm: "flex", md: "none" }}
+        gap={2}
+        flexWrap={"wrap"}
+      >
+        {astrologers.map((astrologer, i) => (
+          <AstroCard
+            key={i}
+            name={astrologer.name}
+            src={astrologer.src}
+            specialities={astrologer.specialities}
+            skills={astrologer.skills}
+          />
+        ))}
+      </Flex>
     </div>
   );
 };
